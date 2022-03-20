@@ -1,4 +1,4 @@
-package io.javabrains.courseapidata;
+package io.javabrains.courseapidata.topic;
 
 import io.javabrains.courseapidata.topic.Topic;
 import org.springframework.data.repository.CrudRepository;
