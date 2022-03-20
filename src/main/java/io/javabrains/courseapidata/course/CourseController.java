@@ -2,7 +2,6 @@ package io.javabrains.courseapidata.course;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -26,6 +25,7 @@ public class CourseController {
     public Course getCourse (@PathVariable int id){
         return courseService.getCourse(id);
     }
+
     @DeleteMapping("/course/{id}")
     public String deleteCourse (@PathVariable int id) {
        courseService.deleteCourse(id);
@@ -36,6 +36,5 @@ public class CourseController {
     public Course updateCourse(@RequestBody Course course, @PathVariable int id) {
        return courseService.updateCourse(id, course);
     }
-
 
 }
